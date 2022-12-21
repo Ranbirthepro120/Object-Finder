@@ -1,0 +1,32 @@
+<html>
+<head>
+
+	<title>AI Object Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js" target="_blank"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body background="background.png">
+    <center>
+        <h3 class="btn btn-info heading">Object Finder<br><span style="color:black; font-size: 15px;">Search any Object Name which is recognised by the CocoSSD Model</span></h3>
+        <br><br>
+    <div class="form-group">
+            <h4 id="object_name_label" class="form-control">Input Object Name</h4>
+            <br>
+            <input id="object_input" placeholder="Enter Any Object Name" type="text" class="form-control">
+            <br>
+            <button onclick="Start()" class="btn btn-success"> begin </button>
+    </div>
+            <h4 class="btn btn-danger" id="status"></h4>
+            <h4 id="name_of_object" class="btn btn-warning"></h4>
+        
+    </center>
+</body>
